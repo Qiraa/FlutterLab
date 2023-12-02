@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_lab/profile.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const MaterialApp(home: MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -9,6 +10,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return const Scaffold(
+        body: SafeArea(
+          child: ProfileScreen(),
+        )
+    );
   }
 }
