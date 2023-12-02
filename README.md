@@ -6,6 +6,3 @@ To run this project you need Flutter at least 3.16.2 and Dart 3.2.2. Just open i
 The project has been checked only in AndroidStudio and for Android platform.
 
 ![Screenshot_1](https://github.com/Qiraa/FlutterLab/assets/95233666/da8a6bf2-c4b6-4c17-8118-e0681d8e3222) ![Screenshot_2](https://github.com/Qiraa/FlutterLab/assets/95233666/b102cee4-6967-4561-bcc4-933516100bef)
-
-
-# FlutterLab
