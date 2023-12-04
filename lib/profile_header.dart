@@ -6,10 +6,8 @@ class ProfileHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-        height: 300,
-        child: Stack(
-          alignment: AlignmentDirectional.center,
+    return Stack(
+          alignment: AlignmentDirectional.topCenter,
           children: [
             Container(
               alignment: Alignment.topLeft,
@@ -38,11 +36,26 @@ class ProfileHeader extends StatelessWidget {
                             fontWeight: FontWeight.bold
                         ),
                       ),
+                      const SizedBox(height: 16),
+                      TabBar(
+                        indicatorSize: TabBarIndicatorSize.tab,
+                        labelStyle: const TextStyle(fontSize: 16),
+                        indicatorColor: AppColors.brandGreen,
+                        labelColor: Colors.black,
+                        unselectedLabelColor: Colors.grey.shade600,
+                        tabs: const [
+                          Tab(
+                            text: "Профиль",
+                          ),
+                          Tab(
+                            text: "Настройки",
+                          )
+                        ],
+                      )
                     ]
                 ),
             ),
           ],
-        )
     );
   }
 }

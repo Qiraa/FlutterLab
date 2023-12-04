@@ -12,7 +12,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
         body: SafeArea(
-          child: ProfileScreen(),
+          child: DefaultTabController(
+              length: 2,
+              child: ProfileScreen(),
+          ),
         )
     );
   }
