@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_lab/app_dimensions.dart';
 import 'package:flutter_lab/profile.dart';
 
 void main() {
@@ -10,11 +11,11 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
         body: SafeArea(
           child: DefaultTabController(
-              length: 2,
-              child: ProfileScreen(),
+              length: AppDimensions.xxs,
+              child: const ProfileScreen(),
           ),
         )
     );

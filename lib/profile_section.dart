@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import 'app_dimensions.dart';
+
 class ProfileSection extends StatelessWidget {
 
   final String _title;
@@ -24,11 +26,12 @@ class ProfileSection extends StatelessWidget {
       children: [
         Text(
           _title,
-          style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+          style: TextStyle(fontSize: AppDimensions.xxl,
+              fontWeight: FontWeight.bold),
         ),
         Text(
           _description,
-          style: TextStyle(fontSize: 14, color: Colors.grey.shade600),
+          style: TextStyle(fontSize: AppDimensions.l, color: Colors.grey.shade600),
         ),
         _child,
       ]

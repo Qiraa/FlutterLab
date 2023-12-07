@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_lab/app_dimensions.dart';
+import 'package:flutter_lab/app_strings.dart';
 import 'package:flutter_lab/colors.dart';
 
 class ProfileHeader extends StatelessWidget {
@@ -12,43 +14,45 @@ class ProfileHeader extends StatelessWidget {
             Container(
               alignment: Alignment.topLeft,
               child: IconButton(
-                icon: Icon(Icons.close, size: 24, color: AppColors.brandGreen),
+                icon: Icon(Icons.close, size: AppDimensions.xxxl,
+                    color: AppColors.brandGreen),
                 onPressed: () => { }
               )
             ),
             Container(
                 alignment: Alignment.topRight,
                 child: IconButton(
-                    icon: Icon(Icons.logout, size: 24, color: AppColors.brandGreen),
+                    icon: Icon(Icons.logout, size: AppDimensions.xxxl,
+                        color: AppColors.brandGreen),
                     onPressed: () => { }
                 )
             ),
             Container(
-                padding: const EdgeInsets.only(top: 24),
+                padding: EdgeInsets.only(top: AppDimensions.xxxl),
                 alignment: Alignment.center,
                 child: Column(
                     children: [
                       Image.asset("images/avatar.png"),
-                      const Text(
-                        "Екатерина",
+                      Text(
+                        AppStrings.name,
                         style: TextStyle(
-                            fontSize: 24,
+                            fontSize: AppDimensions.xxxl,
                             fontWeight: FontWeight.bold
                         ),
                       ),
-                      const SizedBox(height: 16),
+                      SizedBox(height: AppDimensions.xl),
                       TabBar(
                         indicatorSize: TabBarIndicatorSize.tab,
-                        labelStyle: const TextStyle(fontSize: 16),
+                        labelStyle: TextStyle(fontSize: AppDimensions.xl),
                         indicatorColor: AppColors.brandGreen,
                         labelColor: Colors.black,
                         unselectedLabelColor: Colors.grey.shade600,
-                        tabs: const [
+                        tabs: [
                           Tab(
-                            text: "Профиль",
+                            text: AppStrings.profile,
                           ),
                           Tab(
-                            text: "Настройки",
+                            text: AppStrings.settings,
                           )
                         ],
                       )

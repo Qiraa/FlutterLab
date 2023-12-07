@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter_lab/app_strings.dart';
 import 'package:flutter_lab/profile_section.dart';
 
 class ConnectedSection extends StatelessWidget {
@@ -6,9 +7,9 @@ class ConnectedSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const ProfileSection(
-      title: "У вас подключено",
-      description: "Подписки, автоплатежи и сервисы на которые вы подписались",
+    return ProfileSection(
+      title: AppStrings.connections,
+      description: AppStrings.connectionDescription,
       child: Text("Connections"),
     );
   }
