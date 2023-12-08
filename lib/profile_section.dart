@@ -24,14 +24,20 @@ class ProfileSection extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(
-          _title,
-          style: TextStyle(fontSize: AppDimensions.xxl,
-              fontWeight: FontWeight.bold),
+        Container(
+          padding: EdgeInsets.symmetric(horizontal: AppDimensions.xl),
+          child: Text(
+            _title,
+            style: TextStyle(fontSize: AppDimensions.xxl,
+                fontWeight: FontWeight.bold),
+          ),
         ),
-        Text(
-          _description,
-          style: TextStyle(fontSize: AppDimensions.l, color: Colors.grey.shade600),
+        Container(
+          padding: EdgeInsets.symmetric(horizontal: AppDimensions.xl),
+          child: Text(
+            _description,
+            style: TextStyle(fontSize: AppDimensions.l, color: Colors.grey.shade600),
+          ),
         ),
         _child,
       ]

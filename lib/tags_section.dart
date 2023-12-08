@@ -52,9 +52,12 @@ class _TagsSectionState extends State<TagsSection> {
     return ProfileSection(
       title: AppStrings.interests,
       description: AppStrings.interestsDescription,
-      child: Wrap(
-        spacing: AppDimensions.s,
-        children: chips,
+      child: Container(
+        padding: EdgeInsets.symmetric(horizontal: AppDimensions.xl),
+        child: Wrap(
+          spacing: AppDimensions.s,
+          children: chips,
+        )
       ),
     );
   }

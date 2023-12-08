@@ -20,4 +20,13 @@ class AppStrings {
   static String paymentsTitle = "Переводы без комиссии";
   static String paymentsDescription = "Показать остаток в этом месяце";
   static String informationTitle = "Информация о тарифахи лимитах";
+  static String firstCardTitle = "СберПрайм";
+  static String firstCardDescription = "Платёж 9 июля";
+  static String firstCardPrice = "199 ₽ в месяц";
+  static String secondCardTitle = "Переводы";
+  static String secondCardDescription = "Автопродление 21 августа";
+  static String secondCardPrice = "199 ₽ в месяц";
+  static String thirdCardTitle = "СберСпасибо";
+  static String thirdCardDescription = "Много баллов за покупки";
+  static String thirdCardPrice = "Бесплатно";
 }

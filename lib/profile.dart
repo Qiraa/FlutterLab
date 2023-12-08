@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_lab/app_dimensions.dart';
 import 'package:flutter_lab/connected_section.dart';
 import 'package:flutter_lab/profile_header.dart';
 import 'package:flutter_lab/tags_section.dart';
@@ -9,13 +10,16 @@ class ProfileScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const SingleChildScrollView(
+    return SingleChildScrollView(
       child: Column(
         children: [
-          ProfileHeader(),
-          ConnectedSection(),
-          TariffSection(),
-          TagsSection(),
+          const ProfileHeader(),
+          SizedBox(height: AppDimensions.xxxl),
+          const ConnectedSection(),
+          SizedBox(height: AppDimensions.xxxl),
+          const TariffSection(),
+          SizedBox(height: AppDimensions.xxxl),
+          const TagsSection(),
         ],
       ),
     );

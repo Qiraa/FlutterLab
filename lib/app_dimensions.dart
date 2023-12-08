@@ -7,4 +7,5 @@ class AppDimensions {
   static double xl = 16;
   static double xxl = 20;
   static double xxxl = 24;
+  static double xxxxl = 36;
 }
