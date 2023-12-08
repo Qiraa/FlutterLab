@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_lab/app_dimensions.dart';
-import 'package:flutter_lab/connected_section.dart';
-import 'package:flutter_lab/profile_header.dart';
-import 'package:flutter_lab/tags_section.dart';
-import 'package:flutter_lab/tariff_section.dart';
+import 'package:flutter_lab/utils/app_dimensions.dart';
+import 'package:flutter_lab/sections/connected_section.dart';
+import 'package:flutter_lab/sections/tags_section.dart';
+import 'package:flutter_lab/sections/tariff_section.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});
@@ -13,7 +12,6 @@ class ProfileScreen extends StatelessWidget {
     return SingleChildScrollView(
       child: Column(
         children: [
-          const ProfileHeader(),
           SizedBox(height: AppDimensions.xxxl),
           const ConnectedSection(),
           SizedBox(height: AppDimensions.xxxl),

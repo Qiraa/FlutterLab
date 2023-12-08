@@ -1,5 +1,4 @@
 class AppDimensions {
-  static int xxs = 2;
   static double xs = 4;
   static double s = 8;
   static double m = 12;

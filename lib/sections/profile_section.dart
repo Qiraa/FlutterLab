@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import 'app_dimensions.dart';
+import '../utils/app_dimensions.dart';
 
 class ProfileSection extends StatelessWidget {
 

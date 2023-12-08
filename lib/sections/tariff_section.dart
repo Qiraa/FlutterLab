@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_lab/app_dimensions.dart';
-import 'package:flutter_lab/app_strings.dart';
-import 'package:flutter_lab/profile_section.dart';
+import 'package:flutter_lab/utils/app_dimensions.dart';
+import 'package:flutter_lab/sections/profile_section.dart';
+import 'package:flutter_lab/utils/app_strings.dart';
 
 class TariffSection extends StatelessWidget {
   const TariffSection({super.key});

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_lab/app_strings.dart';
-import 'package:flutter_lab/profile_section.dart';
+import 'package:flutter_lab/sections/profile_section.dart';
+import 'package:flutter_lab/utils/app_strings.dart';
 
-import 'app_dimensions.dart';
+import '../utils/app_dimensions.dart';
 
 class TagsSection extends StatefulWidget {
   const TagsSection({super.key});
